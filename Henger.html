@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style.css">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> henger felület térfogat űrtartalom számítás</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Főoldal <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a id="tégla" class="nav-link" href="/Téglatest.html">Téglatest, kocka</a>
+        </li>
+        <li class="nav-item">
+          <a id="henger" class="nav-link" href="/Henger.html">Henger</a>
+        </li>
+        <li class="nav-item">
+          <a id="gömb" class="nav-link" href="/Gömb.html">Gömb</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Geometria, ahogy szereted!
+      </span>
+    </div>
+  </nav>
+  <div>
+    <h2>Henger</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-1"></div>
+      <div id="balközép" class="col-5">
+        <img src="/Pic/henger2.png" alt="henger">
+      </div>
+      <div id="jobbközép" class="col-5">
+        
+        <table style="margin-top: 170px;">
+          <tr>
+            <td><h3>h =</h3></td>
+            <td><input class="form-inline" id="hengerh" placeholder="Kérjük írja be az értéket!"></td>
+            <td><h3>cm</h3></td>
+          </tr>
+          <td><h3>r =</h3></td>
+          <td><input class="form-inline" id="hengerr" placeholder="Kérjük írja be az értéket!"></td>
+          <td><h3>cm</h3></td>
+        </table>
+        <div>
+          <button id="hengszám" onclick="hengerszámítás()" style="margin-left: 100px;">Számítás</button>
+        </div>
+        <div>
+          <p><b>
+            A megadott értékek alapján a henger <br>felülete: <span class="hecm2">0</span>cm<sup>2</sup> = <span class="hem2">0</span>m<sup>2</sup>,<br>
+            az űrtartalma: <span class="hecm3">0</span>cm<sup>3</sup> = <span class="hem3">0</span>m<sup>3</sup>.
+          </b>
+            
+          </p>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
